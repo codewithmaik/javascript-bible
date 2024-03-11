@@ -151,3 +151,18 @@ favouriteMeal = 'Kebab';
 */
 
 // seems to work the same we as let, should never use them though.
+
+// 6. Basic Operators
+
+const currentYear = 2024;
+const ageMaik = currentYear - 1998;
+const ageMaren = currentYear - 2003;
+console.log(ageMaik, ageMaren);
+
+console.log(ageMaik * 2, ageMaren / 2);
+console.log(2**3);
+
+const firstName = 'Maik';
+const lastName = 'Cawelius';
+console.log(firstName + ' ' + lastName);
+
