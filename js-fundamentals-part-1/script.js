@@ -154,15 +154,118 @@ favouriteMeal = 'Kebab';
 
 // 6. Basic Operators
 
-const currentYear = 2024;
-const ageMaik = currentYear - 1998;
-const ageMaren = currentYear - 2003;
-console.log(ageMaik, ageMaren);
+// MATH OPERATORS
 
-console.log(ageMaik * 2, ageMaren / 2);
-console.log(2**3);
+/*
+- Addition (+)
+- Subtraction (-)
+- Multiplication (*)
+- Division (/)
+- Modulus (%)
+- Exponentiation (**)
+- Increment (++)
+- Decrement (--)
+*/
+
+/*
+
+Maybe add this to the string section.
 
 const firstName = 'Maik';
 const lastName = 'Cawelius';
 console.log(firstName + ' ' + lastName);
 
+*/
+
+// ASSIGNMENT OPERATORS
+
+/*
+- =
+- +=
+- -=
+- *=
+- /=
+- %=
+**=
+*/
+
+/*
+let x = 10 + 5;
+x += 20;
+x *= 2;
+console.log(x);
+*/
+
+// COMPARISON OPERATORS
+
+/*
+In JavaScript, comparison operators are used to compare values. They return a Boolean value depending on whether the comparison is true or false.
+
+These operators are commonly used in conditional statements and expressions to control the flow of a program based on comparisons between values.
+*/
+
+/*
+- Equal to (==)
+- Strict equal to (===)
+- Not equal to (!=)
+- Strict not equal to (!==)
+- Greater than (>)
+- Less than (<)
+- Greater than or equal to (>=)
+- Less than or equal to (<=)
+*/
+
+/*
+const currentYear = 2024;
+const ageMaik = currentYear - 1998;
+const ageMaren = currentYear - 2003;
+console.log(ageMaik > ageMaren);
+console.log(ageMaren >= fullAge);
+
+const fullAge = 18;
+
+console.log(ageMaik, ageMaren);
+const isFullAge = ageMaik >= fullAge;
+console.log(isFullAge);
+*/
+
+// OPERATOR PRESEDENCE
+
+/*
+In JavaScript, operator precedence refers to the rules that determine the order in which operators are evaluated when expressions are analyzed. Operators with higher precedence are evaluated first, followed by operators with lower precedence.
+*/
+
+/*
+The following shows that the addition inside the parentheses is executed first, as parentheses have a higher precedence than mathematical operators.
+*/
+
+/*
+const averageAge = (ageMaik + ageMaren) / 2;
+console.log(averageAge); // Output: 23,5
+*/
+
+
+// CODING CHALLENGE
+
+/*
+1. Store Maik's and Maren's mass and height in variables.
+2. Calculate both their BMIs, using the formula.
+3. Create a boolean variable 'hasMaiksHigherBMI' containing
+   information about whether Maik has a higher BMI than Maren.
+4. Log both their BMIs and the boolean variable to the console.
+*/
+
+/*
+let maiksMass = 93;
+let maiksHeight = 1.84;
+
+let marensMass = 62;
+let marensHeight = 1.73;
+
+let maiksBMI = maiksMass / (maiksHeight ** 2);
+let marensBMI = marensMass / (marensHeight ** 2);
+
+let hasMaikHigherBMI = maiksBMI > marensBMI;
+
+console.log(maiksBMI, marensBMI, hasMaikHigherBMI);
+*/
