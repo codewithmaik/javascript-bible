@@ -300,3 +300,53 @@ console.log(`String with
 multiple
 lines.`);
 */
+
+
+// CONTROL STRUCTURE
+/*
+const age = 16;
+const isOldEnough = age >= 18;
+
+if(isOldEnough) {
+   console.log('Sarah can start the driving license!');
+} else {
+   const yearsLeft = 18 - age;
+   console.log(`Sarah is to young, she has to wait another ${yearsLeft} years.`);
+}
+*/
+
+/*
+const birthYear = 1998;
+
+let century; // century has to be defined outside the code block.
+if (birthYear <= 2000) {
+   century = 20;
+} else {
+   century = 21;
+}
+
+console.log(century);
+*/
+
+
+// CODING CHALLENGE
+
+
+let maiksMass = 93;
+let maiksHeight = 1.84;
+
+let marensMass = 62;
+let marensHeight = 1.73;
+
+let maiksBMI = maiksMass / (maiksHeight ** 2);
+let marensBMI = marensMass / (marensHeight ** 2);
+
+let hasMaikHigherBMI = maiksBMI > marensBMI;
+
+console.log(maiksBMI, marensBMI, hasMaikHigherBMI);
+
+if (maiksBMI > marensBMI) {
+   console.log(`Maik's BMI (${maiksBMI}) is higher than Maren's BMI (${marensBMI}).`);
+} else {
+   console.log(`Maren's BMI (${marensBMI}) is higher than Maik's BMI (${maiksBMI})`);
+}
