@@ -269,3 +269,34 @@ let hasMaikHigherBMI = maiksBMI > marensBMI;
 
 console.log(maiksBMI, marensBMI, hasMaikHigherBMI);
 */
+
+
+// Strings and Template Literals
+
+/*
+const firstName = 'Maik';
+const job = 'mechanic';
+const birthYear = 1998;
+const currentYear = 2024;
+
+// The old way to do it
+const maik = "I'm " + firstName + ", a " + (currentYear - birthYear) + ' years old ' + job + '!';
+console.log(maik);
+
+// The ES6 way to do it
+const maikNew = `I'm ${firstName}, a ${currentYear - birthYear} years old ${job} !`;
+console.log(maikNew);
+
+// Also for regular strings
+console.log(`Just a regular string...`);
+
+// Old way to write multi-line-strings.
+console.log('String with \n\
+multiple \n\
+lines..');
+
+// The ES6 way to write multi-line-strings.
+console.log(`String with
+multiple
+lines.`);
+*/
