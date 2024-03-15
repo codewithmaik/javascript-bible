@@ -331,7 +331,7 @@ console.log(century);
 
 // CODING CHALLENGE
 
-
+/*
 let maiksMass = 93;
 let maiksHeight = 1.84;
 
@@ -350,3 +350,88 @@ if (maiksBMI > marensBMI) {
 } else {
    console.log(`Maren's BMI (${marensBMI}) is higher than Maik's BMI (${maiksBMI})`);
 }
+*/
+
+// Type Conversion and Type Coercion
+
+// Type Conversion
+
+/*
+
+Type conversion in JavaScript refers to the process of changing a value from one data type to another.
+
+Number() - to convert several data types into a Number.
+String() - to convert several data types into a String.
+
+*/
+
+// 1.
+const birthYear = '1998'; // String
+let age = 25; // Number
+let currentYear = birthYear + age; // String + Number
+console.log(`We are in the year ${currentYear}`); // Output: 199825 
+
+// 2.
+const newBirthYear = Number(birthYear); // number
+// let age = 25 // Number
+let newCurrentYear = newBirthYear + age; // Number + Number
+console.log(`We are in the year ${newCurrentYear}`);
+
+/*
+
+Learning:
+
+1. In JavaScript, the 'age' variable is implicitly converted into a string and concatenated with the 'birthYear' string in the 'currentYear' calculation, resulting in unexpected behavior.
+
+2. When we explicitly convert the birthYear into a Number using the Number() function, we obtain the expected output.
+
+*/
+
+// NaN
+
+// 1.
+const convertName = 'Maik';
+console.log(`My name is ${Number(convertName)}`); // Output: NaN
+
+// 2.
+console.log(typeof NaN); // Ouptput: Number
+
+/* 
+
+Learning:
+
+1. NaN stands for 'Not a Number' and is a special value of the Number data type in JavaScript. It is used to indicate that an operation is not defined, e.g. when a string can't be converted into a number.
+
+2. It's important to note that NaN is actually a number, but a special one.
+
+*/
+
+// Type Coercion
+
+/*
+
+Type coercion in JavaScript refers to the automatic conversion of data types during operations, which can lead to unexpected behavior if not carefully handled.
+
+*/
+
+// 1.
+console.log('I am ' + 25 + ' years old.'); // String
+console.log('I am ' + '25' + ' years old.'); // String
+
+// 2.
+console.log('30' - '10' - 5); // Output: 15
+
+// 3.
+console.log('10' + '10' - 2); // Output: 1008;
+
+/*
+
+Learning:
+
+1. The + operator triggers to convert Numbers into Strings.
+
+2. The - operator triggers to convert Strings into Numbers. This also applies to *, /, ** and %.
+
+3. The operator triggers only the following value.
+
+*/
