@@ -365,6 +365,8 @@ String() - to convert several data types into a String.
 
 */
 
+/*
+
 // 1.
 const birthYear = '1998'; // String
 let age = 25; // Number
@@ -376,6 +378,9 @@ const newBirthYear = Number(birthYear); // number
 // let age = 25 // Number
 let newCurrentYear = newBirthYear + age; // Number + Number
 console.log(`We are in the year ${newCurrentYear}`);
+
+
+*/
 
 /*
 
@@ -389,12 +394,16 @@ Learning:
 
 // NaN
 
+/*
+
 // 1.
 const convertName = 'Maik';
 console.log(`My name is ${Number(convertName)}`); // Output: NaN
 
 // 2.
 console.log(typeof NaN); // Ouptput: Number
+
+*/
 
 /* 
 
@@ -414,6 +423,8 @@ Type coercion in JavaScript refers to the automatic conversion of data types dur
 
 */
 
+/*
+
 // 1.
 console.log('I am ' + 25 + ' years old.'); // String
 console.log('I am ' + '25' + ' years old.'); // String
@@ -423,6 +434,7 @@ console.log('30' - '10' - 5); // Output: 15
 
 // 3.
 console.log('10' + '10' - 2); // Output: 1008;
+*/
 
 /*
 
@@ -435,3 +447,49 @@ Learning:
 3. The operator triggers only the following value.
 
 */
+
+// Truthy and False Values
+
+// 1. Example
+console.log(Boolean(0)); // Output: false
+console.log(Boolean('')); // Output: false
+console.log(Boolean(undefined)); // Output: false
+console.log(Boolean(null)); // Output: false
+console.log(Boolean(NaN)); // Output: false
+
+/*
+
+Learning:
+
+Besides 'false', there are only 5 falsy values in JavaScript:
+
+- 0
+- ''
+- undefined
+- null
+- NaN
+
+*/
+
+/*
+const money = 1;
+if (money) {
+   console.log("Don't spend it all!");
+} else {
+   console.log("You should get a job!");
+}
+
+let height = 1;
+
+if (height) {
+   console.log("Hight is defined.")
+} else {
+   console.log("Hight is undefined.")
+}
+
+- JavaScript does only do type coercion 2 booleans in 2 scenarios:
+- using logical operators
+- in logical context, e.g. in an condition of an if/else statement.
+
+*/
+
