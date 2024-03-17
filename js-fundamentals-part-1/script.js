@@ -493,3 +493,23 @@ if (height) {
 
 */
 
+/*
+const age = 18;
+// Strict Equality Operator, does not do type coercion
+if (age === 18) console.log("You are an adult.");
+
+// Lose Equality Operator, does type coercion
+if (age == 18 ) console.log("You are an adult.");
+*/
+
+/*
+const favNumber = prompt("What's your favourite number?");
+console.log(favNumber);
+console.log(typeof favNumber); // Output: String
+
+if (favNumber == 10) { // '23' == 23
+   console.log("Cool, 10 is a great number");
+}
+// Solution: Convert  the prompt into a number.
+*/
+
