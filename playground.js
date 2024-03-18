@@ -600,3 +600,14 @@ if (day === "monday") {
    console.log("Not a valid day");
 }
 */
+
+// Statements and Expressions
+
+// Expression produce a value
+
+// Statements doesn't produce a value
+// Statements are like a story that tell something whereas expression are the words of it.
+
+// JavaScript expects statements and expressions in different places.
+
+// e.g expects a expression in a template literal.
