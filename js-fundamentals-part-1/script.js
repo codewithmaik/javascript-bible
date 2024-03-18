@@ -451,11 +451,13 @@ Learning:
 // Truthy and False Values
 
 // 1. Example
+/*
 console.log(Boolean(0)); // Output: false
 console.log(Boolean('')); // Output: false
 console.log(Boolean(undefined)); // Output: false
 console.log(Boolean(null)); // Output: false
 console.log(Boolean(NaN)); // Output: false
+*/
 
 /*
 
@@ -513,3 +515,17 @@ if (favNumber == 10) { // '23' == 23
 // Solution: Convert  the prompt into a number.
 */
 
+// if - else if - else
+// const favNumber = prompt("Enter your fav number:");
+
+/*
+if (favNumber === 25) {
+   console.log("25 is a nice number");
+} else if (favNumber === 30) { // add as many as you want
+   console.log("30 is a nice number");
+} else {
+   console.log("Number is not 25 or 30");
+}
+*/
+
+// if (favNumber !== 23) console.log("Why not 23?");
