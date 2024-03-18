@@ -611,3 +611,28 @@ if (day === "monday") {
 // JavaScript expects statements and expressions in different places.
 
 // e.g expects a expression in a template literal.
+
+// The Conditional (Ternary) Operator
+// Condition - if part - else part
+
+
+const age = 23;
+
+/*
+age >= 18 ? console.log("I like to drink wine."):
+console.log("I like to drink water");
+
+// Operator produces a value, is an expression
+// so we can use this operator to declare variables
+
+const drink = age >= 18 ? "wine" : "water";
+console.log(drink);
+*/
+
+// Also usable in a ternary opeator
+
+/*
+console.log(
+   `I like to drink ${age >= 18 ? "wine" : "water"}`
+);
+*/
