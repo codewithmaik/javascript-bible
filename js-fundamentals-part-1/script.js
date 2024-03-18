@@ -529,3 +529,29 @@ if (favNumber === 25) {
 */
 
 // if (favNumber !== 23) console.log("Why not 23?");
+
+// Basic Boolean Logic
+// A and B
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+console.log(hasDriversLicense && hasGoodVision);
+// A or B
+console.log(hasDriversLicense || hasGoodVision);
+// Not A, Not B
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+if (shouldDrive) {
+   console.log("Sarah should drive!");
+} else {
+   console.log("Someone else should drive");
+}
+
+const isTired = false;
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+   console.log("Sarah should drive!")
+} else {
+   console.log("Someone else should drive!");
+}
