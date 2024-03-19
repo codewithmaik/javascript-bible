@@ -616,7 +616,7 @@ if (day === "monday") {
 // Condition - if part - else part
 
 
-const age = 23;
+// const age = 23;
 
 /*
 age >= 18 ? console.log("I like to drink wine."):
@@ -636,3 +636,63 @@ console.log(
    `I like to drink ${age >= 18 ? "wine" : "water"}`
 );
 */
+
+// History of JavaScript
+
+/*
+1995: Brendan Eich creates the very first version of JavaScript in just 10 days. It was called Mocha, but already had many fundamental features of modern JavaScript.
+*/
+
+/*
+1996: Mocha changes to LiveScript and then to JavaScript,
+in order to attract Java Developers. However, JavaScript
+has almost nothing to do with Java.
+*/
+
+/*
+Microsoft launches Internet Explorer, copying JavaScript from NetScape and calling it JScript.
+*/
+
+/*
+With need to standardize the language, ECMA releases ECMAScript 1 (ES1), the first official standard for JavaScript (ECMAScript is the standard, JavaScript the language in practice).
+*/
+
+/*
+2009: ES5 (ECMAScript 5) is released with lots of great features.
+*/
+
+/*
+2015: ES6/ES2015 (ECMAScript 2015) was released: the biggest update to the language ever.
+*/
+
+/*
+ECMAScript changes to annual release cycle in order to ship less features per update.
+*/
+
+/*
+2016 - end: Release of ES2016 - ES2017 ...
+*/
+
+/*
+Backwards Compatibility: Don't break the web!
+The modern JavaScript engine is able to read code that was written 25 years ago.
+- old features are never removed
+- nor really new versions, just incremental updates (releases)
+- websites keep working forever
+However JavaScript is not forwards compatible ?? Modern browser do not understand code from the future.
+*/
+
+/*
+How to use modern JavaScript today?
+- During Development: Simply use the latest Google Chrome
+- During Production: Use Babel to transpile and polyfill your code, converting back to ES5 to ensure browser compatibility for all users.
+*/
+
+/*
+ES5: Fully supported in all browsers (down to IE9 from 2011), ready to be used today.
+
+ES6/2015 - ES2020: Well supported in all modern browsers, not supported in older browsers, can use the most features in production with transpiling and polyfilling.
+
+ES2021 - end: Future versions of the language (new feature proposals that reach Stage 4), can already use some features in production with transpiling and polyfilling.
+*/
+
