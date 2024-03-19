@@ -696,3 +696,11 @@ ES6/2015 - ES2020: Well supported in all modern browsers, not supported in older
 ES2021 - end: Future versions of the language (new feature proposals that reach Stage 4), can already use some features in production with transpiling and polyfilling.
 */
 
+// 'use strict';
+// helps us to write more secure code, it forbids us to do certain things and it creats visible erros during development.
+
+// Write an example
+
+
+
+
