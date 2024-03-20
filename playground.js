@@ -701,6 +701,74 @@ ES2021 - end: Future versions of the language (new feature proposals that reach 
 
 // Write an example
 
+// FUNCTION
+// A function is a reusable peace of code, 
+// like a variable for whole chunks of code.
+
+function logger() {
+   console.log('My name is Maik');
+   // This function just prints to the console, does't return a value.
+}
+
+const log = logger();
+console.log(typeof log);
+// Technically it does return undefined, but does not really matter here.
+
+// calling, running, invoking
+logger();
+logger();
+
+// A nice term to think of is seeing the function as a machine that processes data.
+
+function fruitProcessor(apples, oranges) {
+   console.log(apples, oranges);
+   const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+   return juice;
+}
+
+const appleJuice = fruitProcessor(5, 2);
+console.log(appleJuice);
+// or
+console.log(fruitProcessor(6, 3));
+// After running a function it represents the value.
+
+// Functions are used for the DRY Principle
+// Don't repeat yourself!
+
+// console.log() is a built-in function.
+// Number() and String() also..
+
+// Function declarations vs. Function expressions
+
+// Function declaration
+// Main difference: We can call function declarations
+// before declared
+function calcAge1(birthYear) {
+   const age = 2024 - birthYear;
+   return age;
+}
+
+// or
 
 
+function calcAge2(birthYear) {
+   return 2024 - birthYear;
+}
+
+console.log(calcAge1(1998));
+console.log(calcAge2(1998));
+
+// parameters are the actual placeholder
+// arguments are the values we pass in when calling
+// but is it used interchangebly
+
+// Function expression
+// Can't be called before because of hoisting
+const calcAge3 = function(birthYear) {
+   return 2024 - birthYear;
+}
+
+console.log(calcAge3(1998));
+
+// In the end function in JavaScript are just values.
 
