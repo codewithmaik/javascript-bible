@@ -705,10 +705,12 @@ ES2021 - end: Future versions of the language (new feature proposals that reach 
 // A function is a reusable peace of code, 
 // like a variable for whole chunks of code.
 
+/*
 function logger() {
    console.log('My name is Maik');
    // This function just prints to the console, does't return a value.
 }
+
 
 const log = logger();
 console.log(typeof log);
@@ -717,9 +719,9 @@ console.log(typeof log);
 // calling, running, invoking
 logger();
 logger();
-
+*/
 // A nice term to think of is seeing the function as a machine that processes data.
-
+/*
 function fruitProcessor(apples, oranges) {
    console.log(apples, oranges);
    const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
@@ -730,6 +732,8 @@ const appleJuice = fruitProcessor(5, 2);
 console.log(appleJuice);
 // or
 console.log(fruitProcessor(6, 3));
+*/
+
 // After running a function it represents the value.
 
 // Functions are used for the DRY Principle
@@ -743,6 +747,8 @@ console.log(fruitProcessor(6, 3));
 // Function declaration
 // Main difference: We can call function declarations
 // before declared
+
+/*
 function calcAge1(birthYear) {
    const age = 2024 - birthYear;
    return age;
@@ -758,17 +764,51 @@ function calcAge2(birthYear) {
 console.log(calcAge1(1998));
 console.log(calcAge2(1998));
 
+*/
+
 // parameters are the actual placeholder
 // arguments are the values we pass in when calling
 // but is it used interchangebly
 
 // Function expression
 // Can't be called before because of hoisting
+
+/*
+
 const calcAge3 = function(birthYear) {
    return 2024 - birthYear;
 }
 
 console.log(calcAge3(1998));
+*/
 
 // In the end function in JavaScript are just values.
+// However it's still important to distinguish between declarations and expressions, they both have their use cases in the language.
 
+// ARROW FUNCTIONS
+
+/*
+Arrow functions are a special type of function expressions that are shorter
+*/
+
+// Simplest form
+
+/*
+const calcAge4 = birthYear => 2024 - birthYear;
+
+const age4 = calcAge4(1998);
+console.log(age4);
+
+const yearsUntilRetirement = (firstName, birthYear) => {
+   const age = 2024 - birthYear;
+   const retirement = 67 - age;
+
+   return `${firstName} returns in ${retirement} years.`;
+}
+
+const years = yearsUntilRetirement("Maik", 1998);
+console.log(years);
+
+*/
+
+// arrow functions do not get a 'this' keyword
