@@ -812,3 +812,23 @@ console.log(years);
 */
 
 // arrow functions do not get a 'this' keyword
+
+// Functions calling other Functions
+
+const cutFruitInPieces = function (fruit) {
+   const cuttedFruit = fruit * 3;
+
+   return cuttedFruit;
+}
+
+const fruitProcessor = function (apples, oranges) {
+   const applePieces = cutFruitInPieces(apples);
+   const orangePieces = cutFruitInPieces(oranges);
+
+   const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+
+   return juice;
+}
+
+const appleJuice = fruitProcessor(5, 2);
+console.log(appleJuice);
