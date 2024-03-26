@@ -815,6 +815,7 @@ console.log(years);
 
 // Functions calling other Functions
 
+/*
 const cutFruitInPieces = function (fruit) {
    const cuttedFruit = fruit * 3;
 
@@ -832,3 +833,4 @@ const fruitProcessor = function (apples, oranges) {
 
 const appleJuice = fruitProcessor(5, 2);
 console.log(appleJuice);
+*/
