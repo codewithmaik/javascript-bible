@@ -1,4 +1,5 @@
 // Introducing to Arrays
+/*
 const friend1 = "Michael";
 const friend2 = "Steven";
 const friend3 = "Peter";
@@ -57,3 +58,49 @@ const ages = [
 ]
 
 console.log(ages);
+
+// Array methods are to operate on JavaScript Arrays, there are countless
+
+*/
+
+// Basic ones..
+const friendsList = ["Nils", "Andi", "Lukas"];
+
+friendsList.push("Franzi");
+console.log(friendsList);
+console.log(friendsList[friendsList.length - 1]);
+
+// the push function actually returns the new length of the array
+
+friendsList.unshift("Jana");
+console.log(friendsList);
+
+// adds one to the beginning of the array, also returns the new length
+
+// removes last element of the array
+// no argument needed
+// does not remove the new length but the removed element
+
+friendsList.pop()
+console.log(friendsList);
+
+// Remove the first element with shift
+
+friendsList.shift();
+console.log(friendsList);
+// will return removed element
+
+// returns the index of the argument if it is the array
+console.log(friendsList.indexOf("Andi"));
+// will get -1 if asking for an element which is not inside..
+
+// includes is an ES6 method
+// tells if an element is in the array or not..
+
+console.log(friendsList.includes("Hallo")); // false
+// does no type coercion
+
+
+
+
+
