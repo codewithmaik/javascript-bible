@@ -37,5 +37,19 @@ console.log(maik[interestedIn]);
 
 // however with dot notation we would get undefined, as we get undefined if we want to access a property that does not exist..
 
+// we can use that to our advantage for creating logic
 
+if (maik[interestedIn]) {
+  console.log(jonas[interestedIn]);
+} else {
+  console.log("Wrong request. Please try again.");
+}
 
+// Using dot-notation to add something to dics
+
+maik.location = "Siersburg";
+console.log(maik);
+
+// Using bracket notation to add something to dics
+maik["birthYear"] = 1998;
+console.log(maik);
